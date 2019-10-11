@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>calculator</title>
+                <link href="https://fonts.googleapis.com/css?family=Markazi+Text&display=swap" rel="stylesheet">
+                <meta charset="UTF-8">
+              </head>
+    <body>
+        <div style="display: flex; justify-content:center;">
+             <button  onclick="myFunction()">calculator</button>
+        </div>
+        <p id="demo"></p>
+
+    <script type="text/javascript" >
+        function myFunction() {
+            let text;let answer;
+            let operator = prompt("+ or - or * or / or ^",);
+            if(operator !=null){
+                let num1 = prompt("Enter first number");
+                let num2 = prompt("Enter second number");
+            switch(operator) {
+                case "+":
+                answer=+num1+ +num2;
+                alert(num1+operator+num2+"="+answer);
+                break;
+                case "-":
+                answer=+num1- +num2;
+                alert(num1+operator+num2+"="+answer);
+                break;
+                case "*":
+                answer=+num1* +num2;
+                alert(num1+operator+num2+"="+answer);
+                break;
+                case "/":
+                answer=+num1/ +num2;
+                alert(num1+operator+num2+"="+answer);
+                break;
+                case "^":
+                answer=Math.pow(+num1,+num2);
+                alert(num1+operator+num2+"="+answer);
+                break;
+                default:
+                alert("Operator not defined!")
+            }
+            
+        }
+        else alert("Operation stopped!")
+        }
+    </script>
+    </body>
+</html>

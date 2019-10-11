@@ -1,0 +1,90 @@
+body {
+  background-color: #000066;
+  margin: 0 auto;
+  color: aliceblue;
+}
+
+header {
+  grid-area: header;
+  color: black;
+  background : #FFCC00;
+  border-bottom: 3px solid #FFCC00;
+  /*padding-right: 600px;
+  padding-top: 20px;*/
+}
+.gridbody{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas:
+        'header header header'
+        'pro_side body_history body_history ';
+}
+.profa{
+    grid-area: prof;
+    border: 3px solid #FFCC00;
+    background-color: #000066;
+    margin-right: 50px;
+    margin-left: 50px;
+    
+}
+.prof_grid{
+   display: grid;
+   grid-gap: 50px;
+   grid-template-areas: 'header header header'
+                        'prof prof prof';
+}
+.side{
+    grid-area: pro_side;
+   /* width: 300px ;*/
+    margin-right: 20px;
+    background : #FFCC00;
+    
+   
+}
+#pro{
+     background-color: #000066;
+     padding-right: 20px;
+}
+.text{
+    color: #FFCC00;
+   /* margin-right: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top:100px;
+    padding-bottom: 100px;*/
+}
+.history{
+    border: 3px solid #FFCC00;
+    grid-area: body_history;
+    margin-left: 20px;
+   /* margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+    
+}
+#ba{
+    color: #FFCC00;
+}
+#ba:hover{
+    color: black;
+}
+#fa{
+    color: #000066;
+}
+#fa:hover{
+    color: #466995;
+}
+.iran {
+  color: azure;
+  border: 3px solid #FFCC00;
+  margin: 20px;
+  padding-right: 450px;
+}
+.iran:hover {
+  background-color: bisque;
+  color: #FFF;
+}
