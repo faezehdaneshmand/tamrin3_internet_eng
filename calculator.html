@@ -14,10 +14,10 @@
     <script type="text/javascript" >
         function myFunction() {
             let text;let answer;
-            let operator = prompt("+ or - or * or / or ^",);
+            let operator = prompt("select operator(+ , - , * , / , ^)",);
             if(operator !=null){
-                let num1 = prompt("Enter first number");
-                let num2 = prompt("Enter second number");
+                let num1 = prompt("Enter number1");
+                let num2 = prompt("Enter number2");
             switch(operator) {
                 case "+":
                 answer=+num1+ +num2;
@@ -40,11 +40,11 @@
                 alert(num1+operator+num2+"="+answer);
                 break;
                 default:
-                alert("Operator not defined!")
+                alert(" not defined!")
             }
             
         }
-        else alert("Operation stopped!")
+        else alert(" stopped!")
         }
     </script>
     </body>
